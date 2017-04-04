@@ -113,7 +113,7 @@ def run_setup(build_c):
           **kw)
 
 try:
-    run_setup(not IS_PYPY)
+    run_setup(False)
 except BuildFailed:
     print('*'*75)
     print('WARNING: C extension could not be compiled, falling back to pure Python.')
